@@ -8,3 +8,4 @@ same(f1(X), f1(Y)) :- same(X, Y).
 
 incr(null, f1(null)).
 incr(f0(X), f1(Y)) :- same(X, Y).
+incr(f1(X), f0(Y)) :- incr(X, Y).
