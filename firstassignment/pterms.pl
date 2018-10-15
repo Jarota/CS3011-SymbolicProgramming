@@ -8,3 +8,5 @@ incr(f1(X), f0(Y)) :- incr(X, Y).
 
 legal(f0(null)).
 legal(X) :- legal(Y), incr(Y, X).
+
+incrR(X, Y) :- legal(X), incr(X, Y).
